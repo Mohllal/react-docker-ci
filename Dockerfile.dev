@@ -12,7 +12,7 @@ COPY ./package-lock.json ./
 RUN npm install
 
 # copy other files in build context folder to cwd in the image
-# COPY ./ ./
+COPY ./ ./
 
 # specify a startup command
 CMD [ "npm", "run", "start" ]
